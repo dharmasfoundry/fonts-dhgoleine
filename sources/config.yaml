@@ -1,0 +1,19 @@
+sources:
+  - fonts/ttf/DhGoleine-Thin.ttf
+  - fonts/ttf/DhGoleine-ThinItalic.ttf
+  - fonts/ttf/DhGoleine-ExtraLight.ttf
+  - fonts/ttf/DhGoleine-ExtraLightItalic.ttf
+  - fonts/ttf/DhGoleine-Light.ttf
+  - fonts/ttf/DhGoleine-LightItalic.ttf
+  - fonts/ttf/DhGoleine-Regular.ttf
+  - fonts/ttf/DhGoleine-Italic.ttf
+  - fonts/ttf/DhGoleine-Medium.ttf
+  - fonts/ttf/DhGoleine-MediumItalic.ttf
+  - fonts/ttf/DhGoleine-SemiBold.ttf
+  - fonts/ttf/DhGoleine-SemiBoldItalic.ttf
+  - fonts/ttf/DhGoleine-Bold.ttf
+  - fonts/ttf/DhGoleine-BoldItalic.ttf
+  - fonts/ttf/DhGoleine-ExtraBold.ttf
+  - fonts/ttf/DhGoleine-ExtraBoldItalic.ttf
+
+familyName: "Dh Goleine"
