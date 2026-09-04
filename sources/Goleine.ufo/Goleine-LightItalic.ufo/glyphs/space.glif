@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="space" format="2">
+  <advance width="275"/>
+  <unicode hex="0020"/>
+  <lib>
+  <dict>
+  <key>__virtual_tags</key>
+  <array>
+    <string>ALL</string>
+    <string>otnone</string>
+    <string>match</string>
+    <string>blank</string>
+  </array>
+  </dict>
+  </lib>
+</glyph>

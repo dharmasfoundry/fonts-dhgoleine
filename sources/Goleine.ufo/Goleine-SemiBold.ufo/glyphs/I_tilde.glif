@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Itilde" format="2">
+  <advance width="269"/>
+  <unicode hex="0128"/>
+  <outline>
+    <component base="I"/>
+    <component base="tilde" xyScale="5.94234e-18" yScale="1" xOffset="-69.2772" yOffset="209.078"/>
+  </outline>
+</glyph>

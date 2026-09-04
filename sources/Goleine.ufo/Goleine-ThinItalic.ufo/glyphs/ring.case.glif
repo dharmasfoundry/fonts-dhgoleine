@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ring.case" format="2">
+  <advance width="262"/>
+  <outline>
+    <component base="ring" xOffset="36.8979" yOffset="183"/>
+  </outline>
+</glyph>

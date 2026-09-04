@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tbar" format="2">
+  <advance width="369"/>
+  <unicode hex="0167"/>
+  <anchor x="198.818" y="88.5315" name="bottom"/>
+  <anchor x="343.095" y="739.075" name="top"/>
+  <outline>
+    <component base="t"/>
+    <component base="macron" xOffset="-54.5001" yOffset="-240.244"/>
+  </outline>
+</glyph>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hbar" format="2">
+  <advance width="619"/>
+  <unicode hex="0127"/>
+  <outline>
+    <component base="h"/>
+    <component base="macron" xyScale="-1.73521e-18" xOffset="-23.5742" yOffset="-34.8871"/>
+  </outline>
+</glyph>

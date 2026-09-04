@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="daggerdbl" format="2">
+  <advance width="580"/>
+  <unicode hex="2021"/>
+  <outline>
+    <contour>
+      <point x="439.575" y="764" type="line"/>
+      <point x="415.865" y="652.455" type="line"/>
+      <point x="392.388" y="504.364" type="line"/>
+      <point x="246.341" y="512.273" type="line"/>
+      <point x="162.069" y="512.273" type="line"/>
+      <point x="156.658" y="486.818" type="line"/>
+      <point x="240.931" y="486.818" type="line"/>
+      <point x="390.722" y="494.818" type="line"/>
+      <point x="331.384" y="236.182" type="line"/>
+      <point x="189.202" y="243.455" type="line"/>
+      <point x="104.93" y="243.455" type="line"/>
+      <point x="99.5191" y="218" type="line"/>
+      <point x="183.792" y="218" type="line"/>
+      <point x="327.897" y="224.909" type="line"/>
+      <point x="300.891" y="111.545" type="line"/>
+      <point x="277.182" y="0" type="line"/>
+      <point x="302.636" y="0" type="line"/>
+      <point x="326.346" y="111.545" type="line"/>
+      <point x="347.533" y="224.909" type="line"/>
+      <point x="488.701" y="218" type="line"/>
+      <point x="572.974" y="218" type="line"/>
+      <point x="578.384" y="243.455" type="line"/>
+      <point x="494.112" y="243.455" type="line"/>
+      <point x="348.838" y="236.182" type="line"/>
+      <point x="399.45" y="494.818" type="line"/>
+      <point x="545.84" y="486.818" type="line"/>
+      <point x="630.113" y="486.818" type="line"/>
+      <point x="635.523" y="512.273" type="line"/>
+      <point x="551.251" y="512.273" type="line"/>
+      <point x="401.842" y="504.364" type="line"/>
+      <point x="441.32" y="652.455" type="line"/>
+      <point x="465.03" y="764" type="line"/>
+    </contour>
+  </outline>
+</glyph>

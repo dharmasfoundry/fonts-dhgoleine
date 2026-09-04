@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lacute" format="2">
+  <advance width="529"/>
+  <unicode hex="013A"/>
+  <anchor x="427.531" y="767" name="top"/>
+  <outline>
+    <component base="l"/>
+    <component base="acute" xOffset="153.158" yOffset="-40"/>
+  </outline>
+</glyph>

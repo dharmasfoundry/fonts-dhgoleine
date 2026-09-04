@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lslash" format="2">
+  <advance width="428"/>
+  <unicode hex="0142"/>
+  <anchor x="185.5" y="748.383" name="top"/>
+  <outline>
+    <component base="l"/>
+    <component base="endash" xOffset="37.6364"/>
+  </outline>
+</glyph>

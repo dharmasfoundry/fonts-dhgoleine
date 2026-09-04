@@ -1,0 +1,1623 @@
+#> languagesystem
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem grek dflt;
+#< languagesystem
+
+feature aalt {
+# Access All Alternates
+
+#> feature
+  feature locl;
+  feature sups;
+  feature salt;
+  feature hist;
+  feature case;
+#< feature
+} aalt;
+feature locl {
+# Localized Forms
+
+#> feature
+  script latn; # Latin
+  language MOL; # Moldavian
+  sub Scedilla by Scommaaccent;
+  sub Tcedilla by Tcommaaccent;
+  sub scedilla by scommaaccent;
+  sub tcedilla by tcommaaccent;
+
+  language ROM; # Romanian
+  sub Scedilla by Scommaaccent;
+  sub Tcedilla by Tcommaaccent;
+  sub scedilla by scommaaccent;
+  sub tcedilla by tcommaaccent;
+#< feature
+} locl;
+feature sups {
+# Superscript
+
+#> feature
+  sub one by onesuperior;
+  sub three by threesuperior;
+  sub two by twosuperior;
+#< feature
+} sups;
+feature frac {
+# Fractions
+
+#> feature
+lookup frac_precomposed {
+
+  sub one slash four by onequarter;
+  sub one slash two by onehalf;
+  sub three slash four by threequarters;
+  sub one fraction four by onequarter;
+  sub one fraction two by onehalf;
+  sub three fraction four by threequarters;
+} frac_precomposed;
+#< feature
+} frac;
+feature ordn {
+# Ordinals
+
+#> feature
+  sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
+  sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
+#< feature
+} ordn;
+feature salt {
+# Stylistic Alternates
+
+#> feature
+  sub caron from [caron.salt];
+  sub commaaccentcomb from [commaaccentcomb.salt];
+  sub l_e from [l_e.001];
+  sub ocircumflex from [ocircumflex.001];
+#< feature
+} salt;
+feature dlig {
+# Discretionary Ligatures
+
+#> feature
+  sub a n by a_n;
+  sub a s by a_s;
+  sub c e by c_e;
+  sub d e by d_e;
+  sub e e by e_e;
+  sub e s by e_s;
+  sub h e by h_e;
+  sub i e by i_e;
+  sub k e by k_e;
+  sub k s by k_s;
+  sub l e by l_e;
+  sub m e by m_e;
+  sub m s by m_s;
+  sub n e by n_e;
+  sub n s by n_s;
+  sub t e by t_e;
+  sub u e by u_e;
+  sub u n by u_n;
+  sub u s by u_s;
+#< feature
+} dlig;
+feature liga {
+# Standard Ligatures
+
+#> feature
+  sub f f by f_f;
+  sub f h by f_h;
+  sub f k by f_k;
+  sub f t by f_t;
+  sub f i by fi;
+  sub f l by fl;
+  sub longs t by longs_t;
+  sub f f i by f_f_i;
+  sub f f l by f_f_l;
+#< feature
+} liga;
+feature hist {
+# Historical Forms
+
+#> feature
+  sub s by longs;
+#< feature
+} hist;
+feature case {
+# Case Sensitive Forms
+
+#> feature
+  sub acute by acute.case;
+  sub breve by breve.case;
+  sub caron by caron.case;
+  sub circumflex by circumflex.case;
+  sub dieresis by dieresis.case;
+  sub dotaccent by dotaccent.case;
+  sub grave by grave.case;
+  sub hungarumlaut by hungarumlaut.case;
+  sub macron by macron.case;
+  sub ring by ring.case;
+  sub tilde by tilde.case;
+#< feature
+} case;
+feature kern {
+  @_z1 = [z zacute zcaron zdotaccent];
+  @_s1 = [a_s e_s k_s m_s n_s s sacute scaron scedilla scircumflex scommaaccent u_s];
+  @_e1 = [c_e d_e e e_e eacute ebreve ecaron ecircumflex edieresis edotaccent egrave emacron eogonek h_e i_e k_e l_e m_e n_e t_e u_e];
+  @_c1 = [c ccaron ccedilla ccircumflex cdotaccent];
+  @_o1 = [o oacute obreve ocircumflex odieresis ograve ohungarumlaut omacron oslash otilde];
+  @_i1 = [dotlessi i iacute icircumflex idieresis igrave];
+  @_a1 = [a aacute abreve acircumflex adieresis agrave amacron aogonek aring atilde u uacute ubreve ucircumflex udieresis ugrave uhungarumlaut umacron uogonek uring utilde];
+  @_m = [a-myanmar a_n m n nacute napostrophe ncaron ncommaaccent ntilde u-myanmar u_n];
+  @_H = [H Hbar Hcircumflex I Iacute Icircumflex Idieresis Igrave M];
+  @_A1 = [A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde];
+  @_N1 = [N Nacute Ncaron Ncommaaccent Ntilde];
+  @_Z1 = [Z Zacute Zcaron Zdotaccent];
+  @_E = [AE E Eacute Ebreve Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek OE];
+  @_Y1 = [Y Yacute Ycircumflex Ydieresis Ygrave];
+  @_D = [D Dcaron Dcroat Eth];
+  @_V1 = [V W Wacute Wcircumflex Wdieresis];
+  @_S1 = [S Sacute Scaron Scedilla Scircumflex Scommaaccent];
+  @_C1 = [C Cacute Ccaron Ccedilla Ccircumflex Cdotaccent];
+  @_U1 = [U Uacute Ubreve Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring Utilde];
+  @_O1 = [O Oacute Obreve Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Omega Oslash Otilde Q];
+  @_y1 = [y yacute ycircumflex ydieresis ygrave];
+  @_d1 = [d dcaron dcroat];
+  @_b = [b];
+  @_f1 = [f f_f f_f_i f_f_l];
+  @_g1 = [dotlessj g gbreve gcircumflex gcommaaccent gdotaccent j jcircumflex];
+  @_h1 = [f_h h hbar hcircumflex];
+  @_k1 = [f_k k kcommaaccent kgreenlandic];
+  @_l = [fi fl l lacute lcaron lcommaaccent ldot];
+  @_r = [r racute rcaron rcommaaccent];
+  @_t = [f_t longs_t t tbar tcaron tcedilla tcommaaccent];
+  @_v = [v w wacute wcircumflex wdieresis wgrave];
+  @_x = [x];
+  @_B1 = [B];
+  @_F = [F];
+  @_G = [G Gbreve Gcircumflex Gcommaaccent Gdotaccent];
+  @_J1 = [IJ J Jcircumflex];
+  @_K = [K Kcommaaccent];
+  @_L = [L Lacute Lcaron Lcommaaccent Ldot];
+  @_P = [P];
+  @_R = [R Racute Rcaron Rcommaaccent];
+  @_T = [T Tbar Tcaron Tcedilla Tcommaaccent];
+  @_X = [X];
+  @_p = [p];
+  @_q = [q];
+  @_a = [a a-myanmar a_n a_s aacute abreve acircumflex adieresis agrave amacron aogonek aring atilde q];
+  @_s = [s sacute scaron scedilla scircumflex scommaaccent];
+  @_z = [z zacute zcaron zdotaccent];
+  @_o = [o oacute obreve ocircumflex odieresis oe ograve ohungarumlaut omacron otilde];
+  @_c = [Cacute c c_e cacute ccaron ccedilla ccircumflex cdotaccent e e_e e_s eacute ebreve ecaron ecircumflex edieresis edotaccent egrave emacron eogonek];
+  @_i = [dotlessi i i_e iacute icircumflex idieresis igrave];
+  @_u = [u u-myanmar u_e u_n u_s uacute ubreve ucircumflex udieresis ugrave uhungarumlaut umacron uogonek uring utilde];
+  @_n = [m_s n n_e n_s nacute napostrophe ncaron ncommaaccent ntilde];
+  @_y = [y yacute ycircumflex ydieresis ygrave];
+  @_d = [d d_e dcaron dcroat];
+  @_f = [f f_f f_f_i f_f_l f_h f_k f_t fi fl];
+  @_h = [b h h_e hbar hcircumflex];
+  @_g = [g gbreve gcircumflex gcommaaccent gdotaccent];
+  @_j = [dotlessj j jcircumflex];
+  @_k = [k k_e k_s kcommaaccent];
+  @_l1 = [l l_e lacute lcaron lcommaaccent ldot];
+  @_m1 = [kgreenlandic m m_e p r racute rcaron rcommaaccent];
+  @_t1 = [longs_t t t_e tbar tcaron tcedilla tcommaaccent];
+  @_v1 = [v w wacute wcircumflex wdieresis wgrave];
+  @_x1 = [x];
+  @_J = [J Jcircumflex];
+  @_T1 = [T Tbar Tcaron Tcedilla Tcommaaccent];
+  @_N = [N Nacute Ncaron Ncommaaccent Ntilde];
+  @_M = [M];
+  @_B = [B D Dcaron E Eacute Ebreve Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F Germandbls H Hbar Hcircumflex I IJ Iacute Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek Itilde K Kcommaaccent L Lacute Lcaron Lcommaaccent Ldot P R Racute Rcaron Rcommaaccent germandbls iogonek];
+  @_Z = [Z Zacute Zcaron Zdotaccent];
+  @_O = [O OE Oacute Obreve Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Omega Oslash Otilde Q];
+  @_V = [V W Wacute Wcircumflex Wdieresis Wgrave];
+  @_C = [C Ccaron Ccedilla Ccircumflex Cdotaccent G Gbreve Gcircumflex Gcommaaccent Gdotaccent];
+  @_Y = [Y Yacute Ydieresis Ygrave];
+  @_S = [S Sacute Scaron Scedilla Scircumflex Scommaaccent];
+  @_U = [U Uacute Ubreve Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring Utilde];
+  @_A = [A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde];
+  @_X1 = [X];
+
+  lookup KERN_LTR  {
+  lookupflag IgnoreMarks;
+    pos space H -10;
+    pos space B -10;
+    pos space D -10;
+    pos space E -10;
+    pos space F -10;
+    pos space I -10;
+    pos space K -10;
+    pos space L -10;
+    pos space P -10;
+    pos space R -10;
+    pos space l -10;
+    pos space germandbls -10;
+    pos space Egrave -10;
+    pos space Eacute -10;
+    pos space Ecircumflex -10;
+    pos space Edieresis -10;
+    pos space Igrave -10;
+    pos space Iacute -10;
+    pos space Icircumflex -10;
+    pos space Idieresis -10;
+    pos space l_e -10;
+    pos space Dcaron -10;
+    pos space Emacron -10;
+    pos space Ebreve -10;
+    pos space Edotaccent -10;
+    pos space Eogonek -10;
+    pos space Ecaron -10;
+    pos space Hcircumflex -10;
+    pos space Hbar -10;
+    pos space Itilde -10;
+    pos space Imacron -10;
+    pos space Iogonek -10;
+    pos space iogonek -10;
+    pos space Idotaccent -10;
+    pos space IJ -10;
+    pos space Kcommaaccent -10;
+    pos space Lacute -10;
+    pos space lacute -10;
+    pos space Lcommaaccent -10;
+    pos space lcommaaccent -10;
+    pos space Lcaron -10;
+    pos space lcaron -10;
+    pos space Ldot -10;
+    pos space ldot -10;
+    pos space Racute -10;
+    pos space Rcommaaccent -10;
+    pos space Rcaron -10;
+    pos space Germandbls -10;
+    pos b X -20;
+    pos b x -70;
+    pos B X -43;
+    pos B x -30;
+    pos F M -30;
+    pos F x -41;
+    pos P M -29;
+    pos P X -70;
+    pos P x 0;
+    pos p x -90;
+    pos q x -91;
+    pos r period -79;
+    pos x x -90;
+    pos zero zero -20;
+    pos zero six -20;
+    pos racute period -79;
+    pos rcommaaccent period -79;
+    pos rcaron period -79;
+  subtable;
+    pos @_z1 @_a -70;
+    pos @_z1 @_s -60;
+    pos @_z1 @_z -60;
+    pos @_z1 @_o -70;
+    pos @_z1 @_c -88;
+    pos @_z1 @_i 0;
+    pos @_z1 @_u -50;
+    pos @_z1 @_n -40;
+    pos @_z1 @_y -40;
+    pos @_z1 @_d -78;
+    pos @_z1 @_f -30;
+    pos @_z1 @_h -50;
+    pos @_z1 @_g -57;
+    pos @_z1 @_j -21;
+    pos @_z1 @_k -51;
+    pos @_z1 @_l1 -73;
+    pos @_z1 @_m1 -40;
+    pos @_z1 @_t1 -50;
+    pos @_z1 @_v1 -40;
+    pos @_z1 @_x1 -53;
+    pos @_z1 @_J 0;
+    pos @_z1 @_T1 0;
+    pos @_s1 @_a -41;
+    pos @_s1 @_s -70;
+    pos @_s1 @_z -78;
+    pos @_s1 @_o -48;
+    pos @_s1 @_c -60;
+    pos @_s1 @_i -30;
+    pos @_s1 @_u -29;
+    pos @_s1 @_n -40;
+    pos @_s1 @_N -20;
+    pos @_s1 @_y -90;
+    pos @_s1 @_d -40;
+    pos @_s1 @_f -50;
+    pos @_s1 @_h -57;
+    pos @_s1 @_g -54;
+    pos @_s1 @_j -40;
+    pos @_s1 @_k -70;
+    pos @_s1 @_l1 -68;
+    pos @_s1 @_m1 -60;
+    pos @_s1 @_t1 -71;
+    pos @_s1 @_v1 -80;
+    pos @_s1 @_x1 -80;
+    pos @_s1 @_J 0;
+    pos @_s1 @_M 0;
+    pos @_s1 @_T1 0;
+    pos @_e1 @_a -49;
+    pos @_e1 @_s -56;
+    pos @_e1 @_z -68;
+    pos @_e1 @_o -21;
+    pos @_e1 @_c -40;
+    pos @_e1 @_i -40;
+    pos @_e1 @_u -28;
+    pos @_e1 @_n -30;
+    pos @_e1 @_y -90;
+    pos @_e1 @_d -40;
+    pos @_e1 @_f -45;
+    pos @_e1 @_h -48;
+    pos @_e1 @_g -59;
+    pos @_e1 @_j -20;
+    pos @_e1 @_k -50;
+    pos @_e1 @_l1 -60;
+    pos @_e1 @_m1 -30;
+    pos @_e1 @_t1 -40;
+    pos @_e1 @_v1 -100;
+    pos @_e1 @_x1 -50;
+    pos @_e1 @_J 0;
+    pos @_c1 @_a -50;
+    pos @_c1 @_s -30;
+    pos @_c1 @_z -72;
+    pos @_c1 @_o -74;
+    pos @_c1 @_c -50;
+    pos @_c1 @_i -30;
+    pos @_c1 @_u -20;
+    pos @_c1 @_n -29;
+    pos @_c1 @_y -60;
+    pos @_c1 @_d -49;
+    pos @_c1 @_f -30;
+    pos @_c1 @_h -70;
+    pos @_c1 @_g -61;
+    pos @_c1 @_j -30;
+    pos @_c1 @_k -57;
+    pos @_c1 @_l1 -50;
+    pos @_c1 @_m1 -50;
+    pos @_c1 @_t1 -38;
+    pos @_c1 @_v1 -83;
+    pos @_c1 @_x1 -60;
+    pos @_c1 @_J 0;
+    pos @_o1 @_a -30;
+    pos @_o1 @_s -50;
+    pos @_o1 @_z -90;
+    pos @_o1 @_o -38;
+    pos @_o1 @_c -46;
+    pos @_o1 @_i -39;
+    pos @_o1 @_u -30;
+    pos @_o1 @_n -44;
+    pos @_o1 @_B 2;
+    pos @_o1 @_Z 0;
+    pos @_o1 @_y -90;
+    pos @_o1 @_d -50;
+    pos @_o1 @_f -60;
+    pos @_o1 @_h -52;
+    pos @_o1 @_g -60;
+    pos @_o1 @_j -28;
+    pos @_o1 @_k -53;
+    pos @_o1 @_l1 -59;
+    pos @_o1 @_m1 -44;
+    pos @_o1 @_t1 -50;
+    pos @_o1 @_v1 -90;
+    pos @_o1 @_x1 -70;
+    pos @_o1 @_J 0;
+    pos @_i1 @_a -70;
+    pos @_i1 @_s -55;
+    pos @_i1 @_z -82;
+    pos @_i1 @_o -79;
+    pos @_i1 @_c -80;
+    pos @_i1 @_i -79;
+    pos @_i1 @_u -27;
+    pos @_i1 @_n -70;
+    pos @_i1 @_y -102;
+    pos @_i1 @_d -50;
+    pos @_i1 @_f -50;
+    pos @_i1 @_h -77;
+    pos @_i1 @_g -63;
+    pos @_i1 @_j -80;
+    pos @_i1 @_k -80;
+    pos @_i1 @_l1 -79;
+    pos @_i1 @_m1 -60;
+    pos @_i1 @_t1 -70;
+    pos @_i1 @_v1 -120;
+    pos @_i1 @_x1 -62;
+    pos @_i1 @_J 0;
+    pos @_i1 @_T1 0;
+    pos @_a1 @_a -48;
+    pos @_a1 @_s -71;
+    pos @_a1 @_z -82;
+    pos @_a1 @_o -60;
+    pos @_a1 @_c -76;
+    pos @_a1 @_i -58;
+    pos @_a1 @_u -57;
+    pos @_a1 @_n -60;
+    pos @_a1 @_B -10;
+    pos @_a1 @_y -100;
+    pos @_a1 @_O 10;
+    pos @_a1 @_d -50;
+    pos @_a1 @_f -55;
+    pos @_a1 @_h -54;
+    pos @_a1 @_g -70;
+    pos @_a1 @_j -55;
+    pos @_a1 @_k -69;
+    pos @_a1 @_l1 -68;
+    pos @_a1 @_m1 -67;
+    pos @_a1 @_t1 -81;
+    pos @_a1 @_v1 -134;
+    pos @_a1 @_x1 -61;
+    pos @_a1 @_J 0;
+    pos @_m @_a -62;
+    pos @_m @_s -70;
+    pos @_m @_z -82;
+    pos @_m @_o -99;
+    pos @_m @_c -90;
+    pos @_m @_i -70;
+    pos @_m @_u -58;
+    pos @_m @_n -69;
+    pos @_m @_y -126;
+    pos @_m @_V -6;
+    pos @_m @_C -10;
+    pos @_m @_d -77;
+    pos @_m @_f -72;
+    pos @_m @_h -71;
+    pos @_m @_g -72;
+    pos @_m @_j -42;
+    pos @_m @_k -86;
+    pos @_m @_l1 -80;
+    pos @_m @_m1 -63;
+    pos @_m @_t1 -87;
+    pos @_m @_v1 -134;
+    pos @_m @_x1 -64;
+    pos @_m @_J 0;
+    pos @_H @_a -20;
+    pos @_H @_s -20;
+    pos @_H @_z -20;
+    pos @_H @_o -20;
+    pos @_H @_c -20;
+    pos @_H @_i -20;
+    pos @_H @_n 0;
+    pos @_H @_B -18;
+    pos @_H @_N -37;
+    pos @_H @_Z -30;
+    pos @_H @_Y -20;
+    pos @_H @_y -20;
+    pos @_H @_V -20;
+    pos @_H @_S -20;
+    pos @_H @_O -52;
+    pos @_H @_C -30;
+    pos @_H @_h -22;
+    pos @_H @_g -10;
+    pos @_H @_k -11;
+    pos @_H @_m1 -10;
+    pos @_H @_v1 -20;
+    pos @_H @_J -125;
+    pos @_A1 @_a -30;
+    pos @_A1 @_s -20;
+    pos @_A1 @_z -40;
+    pos @_A1 @_o -50;
+    pos @_A1 @_c -50;
+    pos @_A1 @_i -64;
+    pos @_A1 @_u -47;
+    pos @_A1 @_n -50;
+    pos @_A1 @_B -30;
+    pos @_A1 @_N -60;
+    pos @_A1 @_Z -60;
+    pos @_A1 @_Y -140;
+    pos @_A1 @_y -124;
+    pos @_A1 @_V -140;
+    pos @_A1 @_S -40;
+    pos @_A1 @_O -103;
+    pos @_A1 @_C -110;
+    pos @_A1 @_U -60;
+    pos @_A1 @_f -30;
+    pos @_A1 @_h -70;
+    pos @_A1 @_g -60;
+    pos @_A1 @_j -20;
+    pos @_A1 @_k -83;
+    pos @_A1 @_l1 -68;
+    pos @_A1 @_m1 -69;
+    pos @_A1 @_t1 -60;
+    pos @_A1 @_v1 -137;
+    pos @_A1 @_x1 -29;
+    pos @_A1 @_J -165;
+    pos @_A1 @_T1 -158;
+    pos @_N1 @_s -10;
+    pos @_N1 @_z -14;
+    pos @_N1 @_o -12;
+    pos @_N1 @_c 0;
+    pos @_N1 @_i 0;
+    pos @_N1 @_u -10;
+    pos @_N1 @_n -20;
+    pos @_N1 @_B -20;
+    pos @_N1 @_N -30;
+    pos @_N1 @_A -40;
+    pos @_N1 @_Z -10;
+    pos @_N1 @_Y -30;
+    pos @_N1 @_y -40;
+    pos @_N1 @_V -28;
+    pos @_N1 @_S -10;
+    pos @_N1 @_O -44;
+    pos @_N1 @_C -28;
+    pos @_N1 @_d 0;
+    pos @_N1 @_h 0;
+    pos @_N1 @_k -20;
+    pos @_N1 @_m1 -23;
+    pos @_N1 @_v1 -20;
+    pos @_N1 @_x1 -19;
+    pos @_N1 @_J -127;
+    pos @_N1 @_M -20;
+    pos @_N1 @_T1 -37;
+    pos @_N1 @_X1 0;
+    pos @_Z1 @_s -10;
+    pos @_Z1 @_z -30;
+    pos @_Z1 @_o 0;
+    pos @_Z1 @_c -17;
+    pos @_Z1 @_i -20;
+    pos @_Z1 @_u -48;
+    pos @_Z1 @_n 0;
+    pos @_Z1 @_B -50;
+    pos @_Z1 @_N -40;
+    pos @_Z1 @_A -56;
+    pos @_Z1 @_Z -50;
+    pos @_Z1 @_Y -80;
+    pos @_Z1 @_y -80;
+    pos @_Z1 @_V -80;
+    pos @_Z1 @_S -30;
+    pos @_Z1 @_O -90;
+    pos @_Z1 @_C -50;
+    pos @_Z1 @_U -30;
+    pos @_Z1 @_h -20;
+    pos @_Z1 @_g -11;
+    pos @_Z1 @_k 0;
+    pos @_Z1 @_l1 0;
+    pos @_Z1 @_m1 0;
+    pos @_Z1 @_t1 -20;
+    pos @_Z1 @_v1 -95;
+    pos @_Z1 @_x1 -30;
+    pos @_Z1 @_J -149;
+    pos @_Z1 @_T1 -80;
+    pos @_Z1 @_X1 -50;
+    pos @_E @_a -20;
+    pos @_E @_z -30;
+    pos @_E @_o -30;
+    pos @_E @_i -10;
+    pos @_E @_u -13;
+    pos @_E @_n -50;
+    pos @_E @_B -32;
+    pos @_E @_N -30;
+    pos @_E @_A -53;
+    pos @_E @_Y -68;
+    pos @_E @_y -38;
+    pos @_E @_V -41;
+    pos @_E @_S -20;
+    pos @_E @_O -70;
+    pos @_E @_C -40;
+    pos @_E @_U -47;
+    pos @_E @_h -11;
+    pos @_E @_g -27;
+    pos @_E @_j 20;
+    pos @_E @_k -28;
+    pos @_E @_l1 -20;
+    pos @_E @_m1 -10;
+    pos @_E @_t1 -10;
+    pos @_E @_v1 -52;
+    pos @_E @_J -153;
+    pos @_E @_M -30;
+    pos @_E @_T1 -30;
+    pos @_E @_X1 -83;
+    pos @_Y1 @_a -135;
+    pos @_Y1 @_s -110;
+    pos @_Y1 @_z -112;
+    pos @_Y1 @_o -148;
+    pos @_Y1 @_c -146;
+    pos @_Y1 @_i -59;
+    pos @_Y1 @_u -116;
+    pos @_Y1 @_n -90;
+    pos @_Y1 @_B -40;
+    pos @_Y1 @_N -40;
+    pos @_Y1 @_A -149;
+    pos @_Y1 @_Z -60;
+    pos @_Y1 @_Y -49;
+    pos @_Y1 @_y -108;
+    pos @_Y1 @_V -30;
+    pos @_Y1 @_S -60;
+    pos @_Y1 @_O -129;
+    pos @_Y1 @_C -119;
+    pos @_Y1 @_U -20;
+    pos @_Y1 @_d -123;
+    pos @_Y1 @_f -40;
+    pos @_Y1 @_h -56;
+    pos @_Y1 @_g -148;
+    pos @_Y1 @_j -44;
+    pos @_Y1 @_k -32;
+    pos @_Y1 @_l1 -26;
+    pos @_Y1 @_m1 -77;
+    pos @_Y1 @_t1 -62;
+    pos @_Y1 @_v1 -120;
+    pos @_Y1 @_x1 -124;
+    pos @_Y1 @_J -175;
+    pos @_Y1 @_M -30;
+    pos @_Y1 @_T1 -60;
+    pos @_Y1 @_X1 0;
+    pos @_D @_a -23;
+    pos @_D @_z -40;
+    pos @_D @_o -25;
+    pos @_D @_c -15;
+    pos @_D @_i -3;
+    pos @_D @_n 0;
+    pos @_D @_B -55;
+    pos @_D @_N -49;
+    pos @_D @_A -86;
+    pos @_D @_Z -66;
+    pos @_D @_Y -120;
+    pos @_D @_y -30;
+    pos @_D @_V -96;
+    pos @_D @_S -69;
+    pos @_D @_O -40;
+    pos @_D @_U -40;
+    pos @_D @_d -12;
+    pos @_D @_h -15;
+    pos @_D @_g -21;
+    pos @_D @_k -19;
+    pos @_D @_l1 -11;
+    pos @_D @_m1 -7;
+    pos @_D @_v1 -13;
+    pos @_D @_x1 -20;
+    pos @_D @_J -173;
+    pos @_D @_M -49;
+    pos @_D @_T1 -98;
+    pos @_D @_X1 -99;
+    pos @_V1 @_a -128;
+    pos @_V1 @_s -110;
+    pos @_V1 @_z -81;
+    pos @_V1 @_o -96;
+    pos @_V1 @_c -110;
+    pos @_V1 @_i -47;
+    pos @_V1 @_u -75;
+    pos @_V1 @_n -51;
+    pos @_V1 @_B -40;
+    pos @_V1 @_N -50;
+    pos @_V1 @_A -153;
+    pos @_V1 @_Z -40;
+    pos @_V1 @_y -70;
+    pos @_V1 @_V -10;
+    pos @_V1 @_S -60;
+    pos @_V1 @_O -100;
+    pos @_V1 @_C -90;
+    pos @_V1 @_U -30;
+    pos @_V1 @_d -113;
+    pos @_V1 @_f -47;
+    pos @_V1 @_h -47;
+    pos @_V1 @_g -150;
+    pos @_V1 @_j -30;
+    pos @_V1 @_k -30;
+    pos @_V1 @_l1 -20;
+    pos @_V1 @_m1 -51;
+    pos @_V1 @_t1 -40;
+    pos @_V1 @_v1 -63;
+    pos @_V1 @_x1 -70;
+    pos @_V1 @_J -175;
+    pos @_V1 @_M -30;
+    pos @_V1 @_T1 -50;
+    pos @_S1 @_a -10;
+    pos @_S1 @_s -20;
+    pos @_S1 @_z -50;
+    pos @_S1 @_o -19;
+    pos @_S1 @_c -18;
+    pos @_S1 @_i -15;
+    pos @_S1 @_u -20;
+    pos @_S1 @_n -50;
+    pos @_S1 @_B -30;
+    pos @_S1 @_N -30;
+    pos @_S1 @_A -62;
+    pos @_S1 @_Z -40;
+    pos @_S1 @_Y -60;
+    pos @_S1 @_y -70;
+    pos @_S1 @_V -40;
+    pos @_S1 @_S -30;
+    pos @_S1 @_O -61;
+    pos @_S1 @_C -30;
+    pos @_S1 @_U -40;
+    pos @_S1 @_h -6;
+    pos @_S1 @_g 0;
+    pos @_S1 @_j 0;
+    pos @_S1 @_k -44;
+    pos @_S1 @_l1 -52;
+    pos @_S1 @_m1 -47;
+    pos @_S1 @_t1 -28;
+    pos @_S1 @_v1 -91;
+    pos @_S1 @_x1 -27;
+    pos @_S1 @_J -140;
+    pos @_S1 @_M -30;
+    pos @_S1 @_T1 -40;
+    pos @_S1 @_X1 -66;
+    pos @_C1 @_a -50;
+    pos @_C1 @_s -19;
+    pos @_C1 @_o -70;
+    pos @_C1 @_c -39;
+    pos @_C1 @_i -10;
+    pos @_C1 @_n -20;
+    pos @_C1 @_B -40;
+    pos @_C1 @_N -20;
+    pos @_C1 @_A -59;
+    pos @_C1 @_Z -50;
+    pos @_C1 @_Y -80;
+    pos @_C1 @_y -11;
+    pos @_C1 @_V -60;
+    pos @_C1 @_O -80;
+    pos @_C1 @_C -40;
+    pos @_C1 @_U -40;
+    pos @_C1 @_d -19;
+    pos @_C1 @_g -40;
+    pos @_C1 @_j 0;
+    pos @_C1 @_l1 -10;
+    pos @_C1 @_m1 -20;
+    pos @_C1 @_v1 -40;
+    pos @_C1 @_x1 -10;
+    pos @_C1 @_J -149;
+    pos @_C1 @_T1 -70;
+    pos @_U1 @_a -40;
+    pos @_U1 @_s -30;
+    pos @_U1 @_z -30;
+    pos @_U1 @_o 0;
+    pos @_U1 @_c -30;
+    pos @_U1 @_i 0;
+    pos @_U1 @_u -20;
+    pos @_U1 @_n 0;
+    pos @_U1 @_B -20;
+    pos @_U1 @_A -94;
+    pos @_U1 @_Z -30;
+    pos @_U1 @_y -30;
+    pos @_U1 @_V -30;
+    pos @_U1 @_S -29;
+    pos @_U1 @_O -38;
+    pos @_U1 @_C -37;
+    pos @_U1 @_d -19;
+    pos @_U1 @_h 0;
+    pos @_U1 @_g -57;
+    pos @_U1 @_m1 0;
+    pos @_U1 @_v1 -20;
+    pos @_U1 @_x1 -20;
+    pos @_U1 @_J -149;
+    pos @_U1 @_T1 -30;
+    pos @_O1 @_a -37;
+    pos @_O1 @_s -12;
+    pos @_O1 @_z -58;
+    pos @_O1 @_o -22;
+    pos @_O1 @_u -10;
+    pos @_O1 @_n 0;
+    pos @_O1 @_B -51;
+    pos @_O1 @_N -70;
+    pos @_O1 @_A -115;
+    pos @_O1 @_Z -80;
+    pos @_O1 @_Y -90;
+    pos @_O1 @_y -27;
+    pos @_O1 @_V -90;
+    pos @_O1 @_S -70;
+    pos @_O1 @_O -50;
+    pos @_O1 @_C -49;
+    pos @_O1 @_U -38;
+    pos @_O1 @_d -23;
+    pos @_O1 @_f -20;
+    pos @_O1 @_h -29;
+    pos @_O1 @_g -40;
+    pos @_O1 @_k -21;
+    pos @_O1 @_l1 -14;
+    pos @_O1 @_t1 -10;
+    pos @_O1 @_v1 -25;
+    pos @_O1 @_x1 -20;
+    pos @_O1 @_J -187;
+    pos @_O1 @_M -40;
+    pos @_O1 @_T1 -81;
+    pos @_O1 @_X1 -90;
+    pos @_y1 @_a -84;
+    pos @_y1 @_s -58;
+    pos @_y1 @_z -71;
+    pos @_y1 @_o -70;
+    pos @_y1 @_c -59;
+    pos @_y1 @_i -30;
+    pos @_y1 @_u -10;
+    pos @_y1 @_n -29;
+    pos @_y1 @_y -30;
+    pos @_y1 @_d -80;
+    pos @_y1 @_f -10;
+    pos @_y1 @_h -80;
+    pos @_y1 @_g -104;
+    pos @_y1 @_k -40;
+    pos @_y1 @_l1 -50;
+    pos @_y1 @_m1 -20;
+    pos @_y1 @_t1 -21;
+    pos @_y1 @_v1 -40;
+    pos @_y1 @_x1 -49;
+    pos @_y1 @_J 0;
+    pos @_d1 @_a -50;
+    pos @_d1 @_s -50;
+    pos @_d1 @_z -86;
+    pos @_d1 @_o -101;
+    pos @_d1 @_c -82;
+    pos @_d1 @_i -66;
+    pos @_d1 @_u -52;
+    pos @_d1 @_n -60;
+    pos @_d1 @_y -104;
+    pos @_d1 @_d -86;
+    pos @_d1 @_f -69;
+    pos @_d1 @_h -56;
+    pos @_d1 @_g -48;
+    pos @_d1 @_j -60;
+    pos @_d1 @_k -80;
+    pos @_d1 @_l1 -79;
+    pos @_d1 @_m1 -78;
+    pos @_d1 @_t1 -77;
+    pos @_d1 @_v1 -110;
+    pos @_d1 @_x1 -47;
+    pos @_d1 @_J 0;
+    pos @_b @_a -78;
+    pos @_b @_s -48;
+    pos @_b @_z -100;
+    pos @_b @_o -50;
+    pos @_b @_c -40;
+    pos @_b @_i -50;
+    pos @_b @_u -47;
+    pos @_b @_n -40;
+    pos @_b @_y -79;
+    pos @_b @_d -60;
+    pos @_b @_f -40;
+    pos @_b @_h -56;
+    pos @_b @_g -73;
+    pos @_b @_j -50;
+    pos @_b @_k -60;
+    pos @_b @_l1 -62;
+    pos @_b @_m1 -50;
+    pos @_b @_t1 -59;
+    pos @_b @_v1 -73;
+    pos @_b @_J 0;
+    pos @_f1 @_a -140;
+    pos @_f1 @_s -105;
+    pos @_f1 @_z -106;
+    pos @_f1 @_o -136;
+    pos @_f1 @_c -98;
+    pos @_f1 @_i -61;
+    pos @_f1 @_u -79;
+    pos @_f1 @_n -80;
+    pos @_f1 @_B 0;
+    pos @_f1 @_y -86;
+    pos @_f1 @_O 0;
+    pos @_f1 @_d -124;
+    pos @_f1 @_f -67;
+    pos @_f1 @_h -68;
+    pos @_f1 @_g -123;
+    pos @_f1 @_j -62;
+    pos @_f1 @_k -96;
+    pos @_f1 @_l1 -91;
+    pos @_f1 @_m1 -83;
+    pos @_f1 @_t1 -66;
+    pos @_f1 @_v1 -88;
+    pos @_f1 @_x1 -62;
+    pos @_f1 @_J 0;
+    pos @_g1 @_a -21;
+    pos @_g1 @_s -9;
+    pos @_g1 @_z -40;
+    pos @_g1 @_o -20;
+    pos @_g1 @_c -20;
+    pos @_g1 @_i -20;
+    pos @_g1 @_u -20;
+    pos @_g1 @_y -29;
+    pos @_g1 @_d 0;
+    pos @_g1 @_f 0;
+    pos @_g1 @_h -30;
+    pos @_g1 @_g -10;
+    pos @_g1 @_j 59;
+    pos @_g1 @_k -18;
+    pos @_g1 @_l1 -21;
+    pos @_g1 @_m1 -10;
+    pos @_g1 @_t1 -4;
+    pos @_g1 @_v1 -40;
+    pos @_g1 @_x1 -20;
+    pos @_g1 @_J 0;
+    pos @_h1 @_a -69;
+    pos @_h1 @_s -60;
+    pos @_h1 @_z -102;
+    pos @_h1 @_o -85;
+    pos @_h1 @_c -80;
+    pos @_h1 @_i -60;
+    pos @_h1 @_u -60;
+    pos @_h1 @_n -49;
+    pos @_h1 @_y -102;
+    pos @_h1 @_d -40;
+    pos @_h1 @_f -67;
+    pos @_h1 @_h -73;
+    pos @_h1 @_g -86;
+    pos @_h1 @_j -50;
+    pos @_h1 @_k -74;
+    pos @_h1 @_l1 -79;
+    pos @_h1 @_m1 -70;
+    pos @_h1 @_t1 -71;
+    pos @_h1 @_v1 -134;
+    pos @_h1 @_x1 -74;
+    pos @_h1 @_J 0;
+    pos @_h1 @_T1 0;
+    pos @_k1 @_a -60;
+    pos @_k1 @_s -70;
+    pos @_k1 @_z -110;
+    pos @_k1 @_o -80;
+    pos @_k1 @_c -60;
+    pos @_k1 @_i -75;
+    pos @_k1 @_u -70;
+    pos @_k1 @_n -60;
+    pos @_k1 @_y -102;
+    pos @_k1 @_O 0;
+    pos @_k1 @_d -69;
+    pos @_k1 @_f -90;
+    pos @_k1 @_h -60;
+    pos @_k1 @_g -67;
+    pos @_k1 @_j -70;
+    pos @_k1 @_k -76;
+    pos @_k1 @_l1 -76;
+    pos @_k1 @_m1 -70;
+    pos @_k1 @_t1 -60;
+    pos @_k1 @_v1 -110;
+    pos @_k1 @_x1 -80;
+    pos @_k1 @_J 0;
+    pos @_k1 @_T1 0;
+    pos @_l @_a -68;
+    pos @_l @_s -50;
+    pos @_l @_z -90;
+    pos @_l @_o -69;
+    pos @_l @_c -90;
+    pos @_l @_i -87;
+    pos @_l @_u -70;
+    pos @_l @_n -47;
+    pos @_l @_y -90;
+    pos @_l @_d -90;
+    pos @_l @_f -84;
+    pos @_l @_h -76;
+    pos @_l @_g -70;
+    pos @_l @_j -30;
+    pos @_l @_k -71;
+    pos @_l @_l1 -88;
+    pos @_l @_m1 -53;
+    pos @_l @_t1 -80;
+    pos @_l @_v1 -106;
+    pos @_l @_x1 -50;
+    pos @_l @_J 0;
+    pos @_l @_T1 0;
+    pos @_r @_a -110;
+    pos @_r @_s -88;
+    pos @_r @_z -72;
+    pos @_r @_o -111;
+    pos @_r @_c -69;
+    pos @_r @_i -30;
+    pos @_r @_u -30;
+    pos @_r @_B -20;
+    pos @_r @_y -50;
+    pos @_r @_d -92;
+    pos @_r @_f -50;
+    pos @_r @_h -50;
+    pos @_r @_g -138;
+    pos @_r @_j -30;
+    pos @_r @_k -70;
+    pos @_r @_l1 -66;
+    pos @_r @_m1 -39;
+    pos @_r @_t1 -30;
+    pos @_r @_v1 -70;
+    pos @_r @_x1 -39;
+    pos @_r @_J 0;
+    pos @_r @_X1 -10;
+    pos @_t @_a -55;
+    pos @_t @_s -30;
+    pos @_t @_z -49;
+    pos @_t @_o -38;
+    pos @_t @_c -50;
+    pos @_t @_i -31;
+    pos @_t @_y -32;
+    pos @_t @_d -50;
+    pos @_t @_f -20;
+    pos @_t @_h -50;
+    pos @_t @_g -35;
+    pos @_t @_k -10;
+    pos @_t @_l1 -30;
+    pos @_t @_m1 -20;
+    pos @_t @_t1 -30;
+    pos @_t @_v1 -20;
+    pos @_t @_J 0;
+    pos @_v @_a -78;
+    pos @_v @_s -40;
+    pos @_v @_z -64;
+    pos @_v @_o -60;
+    pos @_v @_c -91;
+    pos @_v @_i -40;
+    pos @_v @_n -20;
+    pos @_v @_y -40;
+    pos @_v @_d -82;
+    pos @_v @_f -30;
+    pos @_v @_h -50;
+    pos @_v @_g -95;
+    pos @_v @_j 0;
+    pos @_v @_k -55;
+    pos @_v @_l1 -46;
+    pos @_v @_m1 -29;
+    pos @_v @_t1 -17;
+    pos @_v @_v1 -40;
+    pos @_v @_x1 -40;
+    pos @_v @_J 0;
+    pos @_x @_a -120;
+    pos @_x @_s -109;
+    pos @_x @_z -129;
+    pos @_x @_o -100;
+    pos @_x @_c -110;
+    pos @_x @_i -67;
+    pos @_x @_u -71;
+    pos @_x @_n -70;
+    pos @_x @_y -90;
+    pos @_x @_d -108;
+    pos @_x @_f -66;
+    pos @_x @_h -109;
+    pos @_x @_g -97;
+    pos @_x @_j -50;
+    pos @_x @_k -91;
+    pos @_x @_l1 -83;
+    pos @_x @_m1 -89;
+    pos @_x @_t1 -40;
+    pos @_x @_v1 -103;
+    pos @_x @_J 0;
+    pos @_B1 @_a -20;
+    pos @_B1 @_s -30;
+    pos @_B1 @_z -30;
+    pos @_B1 @_o -19;
+    pos @_B1 @_c -20;
+    pos @_B1 @_i -10;
+    pos @_B1 @_u -26;
+    pos @_B1 @_n -20;
+    pos @_B1 @_B -51;
+    pos @_B1 @_N -36;
+    pos @_B1 @_A -55;
+    pos @_B1 @_Z -68;
+    pos @_B1 @_Y -86;
+    pos @_B1 @_y -28;
+    pos @_B1 @_V -92;
+    pos @_B1 @_S -49;
+    pos @_B1 @_O -49;
+    pos @_B1 @_U -57;
+    pos @_B1 @_d -20;
+    pos @_B1 @_f -23;
+    pos @_B1 @_h -40;
+    pos @_B1 @_g -23;
+    pos @_B1 @_j -20;
+    pos @_B1 @_k -41;
+    pos @_B1 @_l1 -24;
+    pos @_B1 @_m1 -30;
+    pos @_B1 @_t1 -51;
+    pos @_B1 @_v1 -60;
+    pos @_B1 @_J -173;
+    pos @_B1 @_T1 -95;
+    pos @_F @_a -88;
+    pos @_F @_s -51;
+    pos @_F @_z -43;
+    pos @_F @_o -69;
+    pos @_F @_c -55;
+    pos @_F @_i -26;
+    pos @_F @_u -30;
+    pos @_F @_n -51;
+    pos @_F @_B -39;
+    pos @_F @_A -115;
+    pos @_F @_Z -41;
+    pos @_F @_Y -60;
+    pos @_F @_y -40;
+    pos @_F @_V -40;
+    pos @_F @_O -110;
+    pos @_F @_C -78;
+    pos @_F @_d -83;
+    pos @_F @_f -20;
+    pos @_F @_h -10;
+    pos @_F @_g -96;
+    pos @_F @_j -6;
+    pos @_F @_k -8;
+    pos @_F @_l1 -13;
+    pos @_F @_m1 -47;
+    pos @_F @_t1 -40;
+    pos @_F @_v1 -69;
+    pos @_F @_J -149;
+    pos @_F @_T1 -30;
+    pos @_G @_o 0;
+    pos @_G @_c -6;
+    pos @_G @_A -20;
+    pos @_G @_Y -90;
+    pos @_G @_V -90;
+    pos @_G @_O -29;
+    pos @_G @_C -20;
+    pos @_G @_U -20;
+    pos @_G @_h -21;
+    pos @_G @_j 10;
+    pos @_G @_k -49;
+    pos @_G @_l1 -39;
+    pos @_G @_m1 -10;
+    pos @_G @_v1 -20;
+    pos @_G @_J -182;
+    pos @_G @_T1 -64;
+    pos @_J1 @_a -39;
+    pos @_J1 @_s 0;
+    pos @_J1 @_o 0;
+    pos @_J1 @_c -40;
+    pos @_J1 @_i 0;
+    pos @_J1 @_u 0;
+    pos @_J1 @_n -41;
+    pos @_J1 @_B -30;
+    pos @_J1 @_A -72;
+    pos @_J1 @_Z -30;
+    pos @_J1 @_Y -60;
+    pos @_J1 @_y 0;
+    pos @_J1 @_V -39;
+    pos @_J1 @_S -36;
+    pos @_J1 @_O -58;
+    pos @_J1 @_C -33;
+    pos @_J1 @_d 0;
+    pos @_J1 @_h 0;
+    pos @_J1 @_g 0;
+    pos @_J1 @_k 0;
+    pos @_J1 @_l1 0;
+    pos @_J1 @_m1 -20;
+    pos @_J1 @_v1 -10;
+    pos @_J1 @_x1 0;
+    pos @_J1 @_J -105;
+    pos @_J1 @_T1 -60;
+    pos @_K @_a -40;
+    pos @_K @_s -45;
+    pos @_K @_z -50;
+    pos @_K @_o -39;
+    pos @_K @_c -70;
+    pos @_K @_i -72;
+    pos @_K @_u -77;
+    pos @_K @_n 0;
+    pos @_K @_B -62;
+    pos @_K @_N -50;
+    pos @_K @_A -70;
+    pos @_K @_Z -53;
+    pos @_K @_Y -50;
+    pos @_K @_y -66;
+    pos @_K @_V -69;
+    pos @_K @_S -70;
+    pos @_K @_O -128;
+    pos @_K @_C -129;
+    pos @_K @_U -62;
+    pos @_K @_d 0;
+    pos @_K @_h -42;
+    pos @_K @_g 0;
+    pos @_K @_j 0;
+    pos @_K @_k 0;
+    pos @_K @_l1 -70;
+    pos @_K @_m1 -58;
+    pos @_K @_t1 -40;
+    pos @_K @_v1 -110;
+    pos @_K @_x1 -40;
+    pos @_K @_J -152;
+    pos @_K @_M -50;
+    pos @_K @_T1 -69;
+    pos @_K @_X1 -60;
+    pos @_L @_a -30;
+    pos @_L @_s -20;
+    pos @_L @_z -70;
+    pos @_L @_c -28;
+    pos @_L @_i 0;
+    pos @_L @_u -40;
+    pos @_L @_n 0;
+    pos @_L @_B -44;
+    pos @_L @_N -60;
+    pos @_L @_A -60;
+    pos @_L @_Z -100;
+    pos @_L @_Y -197;
+    pos @_L @_y -106;
+    pos @_L @_V -160;
+    pos @_L @_S -40;
+    pos @_L @_O -78;
+    pos @_L @_C -70;
+    pos @_L @_U -52;
+    pos @_L @_d -20;
+    pos @_L @_f 0;
+    pos @_L @_h -40;
+    pos @_L @_g 0;
+    pos @_L @_j -29;
+    pos @_L @_k -47;
+    pos @_L @_l1 -20;
+    pos @_L @_m1 -20;
+    pos @_L @_t1 -41;
+    pos @_L @_v1 -110;
+    pos @_L @_x1 -20;
+    pos @_L @_J -167;
+    pos @_L @_M -50;
+    pos @_L @_T1 -220;
+    pos @_L @_X1 -60;
+    pos @_P @_a -90;
+    pos @_P @_s 0;
+    pos @_P @_z -30;
+    pos @_P @_o 0;
+    pos @_P @_c -40;
+    pos @_P @_i 0;
+    pos @_P @_u -19;
+    pos @_P @_n 0;
+    pos @_P @_B -48;
+    pos @_P @_N -62;
+    pos @_P @_A -138;
+    pos @_P @_Z -60;
+    pos @_P @_Y -71;
+    pos @_P @_V -71;
+    pos @_P @_S -50;
+    pos @_P @_O -75;
+    pos @_P @_C -70;
+    pos @_P @_U -30;
+    pos @_P @_d -70;
+    pos @_P @_f -16;
+    pos @_P @_h -30;
+    pos @_P @_g -100;
+    pos @_P @_j 0;
+    pos @_P @_k -27;
+    pos @_P @_v1 0;
+    pos @_P @_J -177;
+    pos @_P @_T1 -50;
+    pos @_R @_a -23;
+    pos @_R @_s 0;
+    pos @_R @_z -34;
+    pos @_R @_o -50;
+    pos @_R @_c -39;
+    pos @_R @_i -20;
+    pos @_R @_u -50;
+    pos @_R @_n -50;
+    pos @_R @_B -60;
+    pos @_R @_N -50;
+    pos @_R @_A -50;
+    pos @_R @_Z -57;
+    pos @_R @_Y -130;
+    pos @_R @_y -64;
+    pos @_R @_V -122;
+    pos @_R @_S -40;
+    pos @_R @_O -87;
+    pos @_R @_C -90;
+    pos @_R @_U -80;
+    pos @_R @_d -19;
+    pos @_R @_f -20;
+    pos @_R @_h -49;
+    pos @_R @_j -20;
+    pos @_R @_k -40;
+    pos @_R @_l1 -30;
+    pos @_R @_m1 -58;
+    pos @_R @_t1 0;
+    pos @_R @_v1 -88;
+    pos @_R @_x1 -30;
+    pos @_R @_J -123;
+    pos @_R @_T1 -99;
+    pos @_R @_X1 -65;
+    pos @_T @_a -70;
+    pos @_T @_s -50;
+    pos @_T @_z -29;
+    pos @_T @_o -101;
+    pos @_T @_c -70;
+    pos @_T @_i -20;
+    pos @_T @_u -70;
+    pos @_T @_n -70;
+    pos @_T @_B -37;
+    pos @_T @_N -60;
+    pos @_T @_A -89;
+    pos @_T @_Z -40;
+    pos @_T @_Y -60;
+    pos @_T @_y 0;
+    pos @_T @_V -40;
+    pos @_T @_S -50;
+    pos @_T @_O -90;
+    pos @_T @_C -80;
+    pos @_T @_U -40;
+    pos @_T @_d -85;
+    pos @_T @_h -19;
+    pos @_T @_g -130;
+    pos @_T @_j 0;
+    pos @_T @_k -17;
+    pos @_T @_l1 -17;
+    pos @_T @_m1 -70;
+    pos @_T @_v1 -60;
+    pos @_T @_x1 -59;
+    pos @_T @_J -167;
+    pos @_T @_M -21;
+    pos @_T @_X1 -60;
+    pos @_X @_a -30;
+    pos @_X @_s -20;
+    pos @_X @_z -50;
+    pos @_X @_o -53;
+    pos @_X @_c -20;
+    pos @_X @_i -47;
+    pos @_X @_u -20;
+    pos @_X @_n 0;
+    pos @_X @_N 0;
+    pos @_X @_Z -50;
+    pos @_X @_Y -20;
+    pos @_X @_y -81;
+    pos @_X @_V -21;
+    pos @_X @_S -40;
+    pos @_X @_O -89;
+    pos @_X @_C -51;
+    pos @_X @_U -10;
+    pos @_X @_d -28;
+    pos @_X @_h -29;
+    pos @_X @_g -28;
+    pos @_X @_j -17;
+    pos @_X @_k -44;
+    pos @_X @_l1 -32;
+    pos @_X @_m1 -31;
+    pos @_X @_t1 -20;
+    pos @_X @_v1 -40;
+    pos @_X @_J -158;
+    pos @_X @_T1 -30;
+    pos @_p @_a -60;
+    pos @_p @_s -40;
+    pos @_p @_z -100;
+    pos @_p @_o -40;
+    pos @_p @_c -47;
+    pos @_p @_i -40;
+    pos @_p @_u -32;
+    pos @_p @_n -40;
+    pos @_p @_y -80;
+    pos @_p @_d -59;
+    pos @_p @_f -50;
+    pos @_p @_h -58;
+    pos @_p @_g -88;
+    pos @_p @_j -30;
+    pos @_p @_k -60;
+    pos @_p @_l1 -40;
+    pos @_p @_m1 -40;
+    pos @_p @_t1 -40;
+    pos @_p @_v1 -80;
+    pos @_p @_J 0;
+    pos @_q @_a -122;
+    pos @_q @_s -92;
+    pos @_q @_z -133;
+    pos @_q @_o -98;
+    pos @_q @_c -97;
+    pos @_q @_i -105;
+    pos @_q @_u -104;
+    pos @_q @_n -94;
+    pos @_q @_y -107;
+    pos @_q @_O 0;
+    pos @_q @_d -84;
+    pos @_q @_h -96;
+    pos @_q @_g -59;
+    pos @_q @_k -92;
+    pos @_q @_l1 -112;
+    pos @_q @_m1 -92;
+    pos @_q @_t1 -104;
+    pos @_q @_v1 -131;
+    pos @_q @_J 0;
+    pos @_q @_T1 0;
+  lookupflag 0;
+  } KERN_LTR;
+
+  lookup KERN_LTR;
+} kern;
+feature mark {
+# GPOS feature : Mark Positioning
+    markClass gravecomb <anchor 0 832> @top;
+    markClass acutecomb <anchor 0 832> @top;
+    markClass circumflexcomb <anchor 0 827> @top;
+    markClass tildecomb <anchor 0 606> @top;
+    markClass macroncomb <anchor 0 548> @top;
+    markClass brevecomb <anchor 0 858> @top;
+    markClass dotaccentcomb <anchor 0 900> @top;
+    markClass dieresiscomb <anchor 0 900> @top;
+    markClass ringcomb <anchor 0 817> @top;
+    markClass hungarumlautcomb <anchor 0 832> @top;
+    markClass caroncomb <anchor 0 824> @top;
+    markClass cedillacomb <anchor 0 44> @bottom;
+    markClass ogonekcomb <anchor 56 54> @bottom;
+
+  lookup markLTR {
+      pos base a
+          <anchor 260 -79> mark @bottom
+          <anchor 260 580> mark @top;
+      pos base u
+          <anchor 260 594> mark @top;
+      pos base e
+          <anchor 201 -79> mark @bottom
+          <anchor 201 593> mark @top;
+      pos base g
+          <anchor 215 590> mark @top;
+      pos base J
+          <anchor 199 773> mark @top;
+      pos base c
+          <anchor 231 4> mark @bottom
+          <anchor 193 590> mark @top;
+      pos base d
+          <anchor 260 787> mark @top;
+      pos base i
+          <anchor 126 -79> mark @bottom;
+      pos base l
+          <anchor 126 787> mark @top;
+      pos base n
+          <anchor 264 590> mark @top;
+      pos base o
+          <anchor 220 593> mark @top;
+      pos base r
+          <anchor 184 593> mark @top;
+      pos base s
+          <anchor 202 593> mark @top;
+      pos base t
+          <anchor 137 -9> mark @bottom
+          <anchor 137 702> mark @top;
+      pos base w
+          <anchor 378 597> mark @top;
+      pos base y
+          <anchor 245 607> mark @top;
+      pos base z
+          <anchor 240 593> mark @top;
+      pos base dotlessi
+          <anchor 95 557> mark @top;
+      pos base agrave
+          <anchor 260 -79> mark @bottom
+          <anchor 260 580> mark @top;
+      pos base aacute
+          <anchor 260 -79> mark @bottom
+          <anchor 260 580> mark @top;
+      pos base acircumflex
+          <anchor 260 -79> mark @bottom
+          <anchor 260 580> mark @top;
+      pos base atilde
+          <anchor 260 -79> mark @bottom
+          <anchor 260 580> mark @top;
+      pos base adieresis
+          <anchor 260 -79> mark @bottom
+          <anchor 260 580> mark @top;
+      pos base aring
+          <anchor 260 -79> mark @bottom
+          <anchor 260 580> mark @top;
+      pos base ccedilla
+          <anchor 231 4> mark @bottom
+          <anchor 193 590> mark @top;
+      pos base dcroat
+          <anchor 260 787> mark @top;
+      pos base egrave
+          <anchor 201 -79> mark @bottom
+          <anchor 201 593> mark @top;
+      pos base eacute
+          <anchor 201 -79> mark @bottom
+          <anchor 201 593> mark @top;
+      pos base ecircumflex
+          <anchor 201 -79> mark @bottom
+          <anchor 201 593> mark @top;
+      pos base edieresis
+          <anchor 201 -79> mark @bottom
+          <anchor 201 593> mark @top;
+      pos base igrave
+          <anchor 95 557> mark @top;
+      pos base iacute
+          <anchor 95 557> mark @top;
+      pos base icircumflex
+          <anchor 95 557> mark @top;
+      pos base idieresis
+          <anchor 95 557> mark @top;
+      pos base lslash
+          <anchor 126 787> mark @top;
+      pos base ntilde
+          <anchor 264 590> mark @top;
+      pos base scaron
+          <anchor 202 593> mark @top;
+      pos base ugrave
+          <anchor 260 594> mark @top;
+      pos base uacute
+          <anchor 260 594> mark @top;
+      pos base ucircumflex
+          <anchor 260 594> mark @top;
+      pos base udieresis
+          <anchor 260 594> mark @top;
+      pos base yacute
+          <anchor 245 607> mark @top;
+      pos base ydieresis
+          <anchor 245 607> mark @top;
+      pos base zcaron
+          <anchor 266 593> mark @top;
+      pos base amacron
+          <anchor 260 -79> mark @bottom
+          <anchor 260 580> mark @top;
+      pos base abreve
+          <anchor 260 -79> mark @bottom
+          <anchor 260 580> mark @top;
+      pos base cacute
+          <anchor 231 4> mark @bottom
+          <anchor 193 590> mark @top;
+      pos base ccircumflex
+          <anchor 231 4> mark @bottom
+          <anchor 193 590> mark @top;
+      pos base cdotaccent
+          <anchor 231 4> mark @bottom
+          <anchor 193 590> mark @top;
+      pos base ccaron
+          <anchor 231 4> mark @bottom
+          <anchor 193 590> mark @top;
+      pos base emacron
+          <anchor 201 -79> mark @bottom
+          <anchor 201 593> mark @top;
+      pos base ebreve
+          <anchor 201 -79> mark @bottom
+          <anchor 201 593> mark @top;
+      pos base edotaccent
+          <anchor 201 -79> mark @bottom
+          <anchor 201 593> mark @top;
+      pos base ecaron
+          <anchor 201 -79> mark @bottom
+          <anchor 201 593> mark @top;
+      pos base gcircumflex
+          <anchor 215 590> mark @top;
+      pos base gbreve
+          <anchor 215 590> mark @top;
+      pos base gdotaccent
+          <anchor 215 590> mark @top;
+      pos base gcommaaccent
+          <anchor 215 590> mark @top;
+      pos base itilde
+          <anchor 95 557> mark @top;
+      pos base imacron
+          <anchor 95 557> mark @top;
+      pos base IJ
+          <anchor 177 773> mark @top;
+      pos base ij
+          <anchor 115 -78> mark @bottom;
+      pos base Jcircumflex
+          <anchor 199 773> mark @top;
+      pos base lacute
+          <anchor 126 787> mark @top;
+      pos base nacute
+          <anchor 264 590> mark @top;
+      pos base ncaron
+          <anchor 264 590> mark @top;
+      pos base napostrophe
+          <anchor 264 590> mark @top;
+      pos base omacron
+          <anchor 220 593> mark @top;
+      pos base obreve
+          <anchor 220 593> mark @top;
+      pos base ohungarumlaut
+          <anchor 220 593> mark @top;
+      pos base racute
+          <anchor 184 593> mark @top;
+      pos base rcaron
+          <anchor 184 593> mark @top;
+      pos base sacute
+          <anchor 202 593> mark @top;
+      pos base scircumflex
+          <anchor 202 593> mark @top;
+      pos base scedilla
+          <anchor 202 593> mark @top;
+      pos base tbar
+          <anchor 137 -9> mark @bottom
+          <anchor 137 702> mark @top;
+      pos base utilde
+          <anchor 260 594> mark @top;
+      pos base umacron
+          <anchor 260 594> mark @top;
+      pos base ubreve
+          <anchor 260 594> mark @top;
+      pos base uring
+          <anchor 260 594> mark @top;
+      pos base uhungarumlaut
+          <anchor 260 594> mark @top;
+      pos base wcircumflex
+          <anchor 378 597> mark @top;
+      pos base ycircumflex
+          <anchor 245 607> mark @top;
+      pos base zacute
+          <anchor 240 593> mark @top;
+      pos base zdotaccent
+          <anchor 240 593> mark @top;
+      pos base dotlessj
+          <anchor 95 557> mark @top;
+      pos base wgrave
+          <anchor 378 597> mark @top;
+      pos base wdieresis
+          <anchor 378 597> mark @top;
+      pos base wacute
+          <anchor 378 597> mark @top;
+      pos base peseta
+          <anchor 596 -9> mark @bottom
+          <anchor 906 593> mark @top;
+      pos base Ygrave
+          <anchor 256 1305> mark @top;
+      pos base ygrave
+          <anchor 245 667> mark @top;
+	   pos base j
+     			<anchor 187 590> mark @top;
+  } markLTR;
+
+  lookup markLTR;
+} mark;

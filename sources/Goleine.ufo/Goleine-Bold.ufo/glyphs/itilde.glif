@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="itilde" format="2">
+  <advance width="479"/>
+  <unicode hex="0129"/>
+  <anchor x="200.985" y="583.667" name="top"/>
+  <outline>
+    <component base="dotlessi"/>
+    <component base="tilde" xyScale="1.84483e-18" yScale="1" xOffset="-11.3636" yOffset="64.9091"/>
+  </outline>
+</glyph>

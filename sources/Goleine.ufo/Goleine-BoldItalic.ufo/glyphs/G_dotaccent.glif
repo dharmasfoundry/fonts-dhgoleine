@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Gdotaccent" format="2">
+  <advance width="735"/>
+  <unicode hex="0120"/>
+  <outline>
+    <component base="G" xOffset="6.63636"/>
+    <component base="dotaccent" xScale="1" xyScale="-2.13333e-18" xOffset="237.409" yOffset="-75.06"/>
+  </outline>
+</glyph>

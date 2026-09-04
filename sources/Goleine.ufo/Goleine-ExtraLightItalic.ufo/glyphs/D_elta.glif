@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Delta" format="2">
+  <advance width="928"/>
+  <unicode hex="0394"/>
+  <outline>
+    <contour>
+      <point x="629.969" y="768" type="line"/>
+      <point x="624.257" y="768" type="line"/>
+      <point x="55.9415" y="5.5438" type="line"/>
+      <point x="54.7631" y="0" type="line"/>
+      <point x="872.976" y="0" type="line"/>
+      <point x="874.154" y="5.54381" type="line"/>
+    </contour>
+    <contour>
+      <point x="76.1892" y="16.4189" type="line"/>
+      <point x="75.8722" y="8.11731" type="line"/>
+      <point x="623.694" y="743.802" type="line"/>
+      <point x="621.023" y="743.617" type="line"/>
+      <point x="855.363" y="8.11737" type="line"/>
+      <point x="858.53" y="16.419" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="guillemotleft" format="2">
+  <advance width="460"/>
+  <unicode hex="00AB"/>
+  <outline>
+    <contour>
+      <point x="49.5455" y="277.273" type="curve" smooth="yes"/>
+      <point x="49.5455" y="242"/>
+      <point x="230" y="105"/>
+      <point x="244.818" y="103" type="curve"/>
+      <point x="247.909" y="112.182" type="line"/>
+      <point x="243.091" y="113.636"/>
+      <point x="107.545" y="246.455"/>
+      <point x="107.545" y="277" type="curve" smooth="yes"/>
+      <point x="107.545" y="308.273"/>
+      <point x="243.091" y="438.364"/>
+      <point x="247.909" y="439.818" type="curve"/>
+      <point x="244.818" y="449" type="line"/>
+      <point x="230" y="447"/>
+      <point x="49.5455" y="313.273"/>
+    </contour>
+    <contour>
+      <point x="212.364" y="277.273" type="curve" smooth="yes"/>
+      <point x="212.364" y="242"/>
+      <point x="392.818" y="105"/>
+      <point x="407.636" y="103" type="curve"/>
+      <point x="410.727" y="112.182" type="line"/>
+      <point x="405.909" y="113.636"/>
+      <point x="270.364" y="246.455"/>
+      <point x="270.364" y="277" type="curve" smooth="yes"/>
+      <point x="270.364" y="308.273"/>
+      <point x="405.909" y="438.364"/>
+      <point x="410.727" y="439.818" type="curve"/>
+      <point x="407.636" y="449" type="line"/>
+      <point x="392.818" y="447"/>
+      <point x="212.364" y="313.273"/>
+    </contour>
+  </outline>
+</glyph>

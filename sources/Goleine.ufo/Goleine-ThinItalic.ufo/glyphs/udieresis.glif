@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="udieresis" format="2">
+  <advance width="520"/>
+  <unicode hex="00FC"/>
+  <anchor x="386.259" y="594" name="top"/>
+  <outline>
+    <component base="u"/>
+    <component base="dieresis" xOffset="78.1075" yOffset="-310"/>
+  </outline>
+</glyph>

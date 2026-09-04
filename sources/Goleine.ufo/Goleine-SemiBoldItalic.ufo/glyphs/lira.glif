@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lira" format="2">
+  <advance width="590"/>
+  <unicode hex="20A4"/>
+  <outline>
+    <component base="sterling"/>
+    <component base="hyphen" xyScale="-3.07273e-18" xOffset="-16.5773" yOffset="-72.0746"/>
+  </outline>
+</glyph>

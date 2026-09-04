@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="caron.salt" format="2">
+  <advance width="343"/>
+  <outline>
+    <contour>
+      <point x="369.46" y="961.909" type="curve" smooth="yes"/>
+      <point x="353.824" y="961.909"/>
+      <point x="278.496" y="1038.64"/>
+      <point x="275.71" y="1042.64" type="curve"/>
+      <point x="259.135" y="1037.36" type="line"/>
+      <point x="253.863" y="1007"/>
+      <point x="326.832" y="859.727"/>
+      <point x="350.195" y="859.727" type="curve" smooth="yes"/>
+      <point x="372.741" y="859.727"/>
+      <point x="501.772" y="1007"/>
+      <point x="510.226" y="1037.36" type="curve"/>
+      <point x="491.801" y="1042.64" type="line"/>
+      <point x="487.314" y="1038.64"/>
+      <point x="384.278" y="961.909"/>
+    </contour>
+  </outline>
+</glyph>

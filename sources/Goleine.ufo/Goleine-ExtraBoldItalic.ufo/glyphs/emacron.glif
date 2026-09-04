@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="emacron" format="2">
+  <advance width="545"/>
+  <unicode hex="0113"/>
+  <anchor x="201.415" y="49" name="bottom"/>
+  <anchor x="402.408" y="590" name="top"/>
+  <outline>
+    <component base="e"/>
+    <component base="macron" xOffset="95.3767" yOffset="30"/>
+  </outline>
+</glyph>

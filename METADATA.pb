@@ -1,135 +1,135 @@
-name: "Dh Goleine"
+name: "Goleine"
 designer: "Irzad Norandito"
 license: "OFL"
 category: "SERIF"
 date_added: "2026-08-18"
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "normal"
   weight: 100
-  filename: "DhGoleine-Thin.ttf"
-  post_script_name: "DhGoleine-Thin"
-  full_name: "Dh Goleine Thin"
+  filename: "Goleine-Thin.ttf"
+  post_script_name: "Goleine-Thin"
+  full_name: "Goleine Thin"
 }
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "italic"
   weight: 100
-  filename: "DhGoleine-ThinItalic.ttf"
-  post_script_name: "DhGoleine-ThinItalic"
-  full_name: "Dh Goleine Thin Italic"
+  filename: "Goleine-ThinItalic.ttf"
+  post_script_name: "Goleine-ThinItalic"
+  full_name: "Goleine Thin Italic"
 }
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "normal"
   weight: 200
-  filename: "DhGoleine-ExtraLight.ttf"
-  post_script_name: "DhGoleine-ExtraLight"
-  full_name: "Dh Goleine ExtraLight"
+  filename: "Goleine-ExtraLight.ttf"
+  post_script_name: "Goleine-ExtraLight"
+  full_name: "Goleine ExtraLight"
 }
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "italic"
   weight: 200
-  filename: "DhGoleine-ExtraLightItalic.ttf"
-  post_script_name: "DhGoleine-ExtraLightItalic"
-  full_name: "Dh Goleine ExtraLight Italic"
+  filename: "Goleine-ExtraLightItalic.ttf"
+  post_script_name: "Goleine-ExtraLightItalic"
+  full_name: "Goleine ExtraLight Italic"
 }
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "normal"
   weight: 300
-  filename: "DhGoleine-Light.ttf"
-  post_script_name: "DhGoleine-Light"
-  full_name: "Dh Goleine Light"
+  filename: "Goleine-Light.ttf"
+  post_script_name: "Goleine-Light"
+  full_name: "Goleine Light"
 }
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "italic"
   weight: 300
-  filename: "DhGoleine-LightItalic.ttf"
-  post_script_name: "DhGoleine-LightItalic"
-  full_name: "Dh Goleine Light Italic"
+  filename: "Goleine-LightItalic.ttf"
+  post_script_name: "Goleine-LightItalic"
+  full_name: "Goleine Light Italic"
 }
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "normal"
   weight: 400
-  filename: "DhGoleine-Regular.ttf"
-  post_script_name: "DhGoleine-Regular"
-  full_name: "Dh Goleine Regular"
+  filename: "Goleine-Regular.ttf"
+  post_script_name: "Goleine-Regular"
+  full_name: "Goleine Regular"
 }
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "italic"
   weight: 400
-  filename: "DhGoleine-Italic.ttf"
-  post_script_name: "DhGoleine-Italic"
-  full_name: "Dh Goleine Italic"
+  filename: "Goleine-Italic.ttf"
+  post_script_name: "Goleine-Italic"
+  full_name: "Goleine Italic"
 }
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "normal"
   weight: 500
-  filename: "DhGoleine-Medium.ttf"
-  post_script_name: "DhGoleine-Medium"
-  full_name: "Dh Goleine Medium"
+  filename: "Goleine-Medium.ttf"
+  post_script_name: "Goleine-Medium"
+  full_name: "Goleine Medium"
 }
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "italic"
   weight: 500
-  filename: "DhGoleine-MediumItalic.ttf"
-  post_script_name: "DhGoleine-MediumItalic"
-  full_name: "Dh Goleine Medium Italic"
+  filename: "Goleine-MediumItalic.ttf"
+  post_script_name: "Goleine-MediumItalic"
+  full_name: "Goleine Medium Italic"
 }
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "normal"
   weight: 600
-  filename: "DhGoleine-SemiBold.ttf"
-  post_script_name: "DhGoleine-SemiBold"
-  full_name: "Dh Goleine SemiBold"
+  filename: "Goleine-SemiBold.ttf"
+  post_script_name: "Goleine-SemiBold"
+  full_name: "Goleine SemiBold"
 }
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "italic"
   weight: 600
-  filename: "DhGoleine-SemiBoldItalic.ttf"
-  post_script_name: "DhGoleine-SemiBoldItalic"
-  full_name: "Dh Goleine SemiBold Italic"
+  filename: "Goleine-SemiBoldItalic.ttf"
+  post_script_name: "Goleine-SemiBoldItalic"
+  full_name: "Goleine SemiBold Italic"
 }
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "normal"
   weight: 700
-  filename: "DhGoleine-Bold.ttf"
-  post_script_name: "DhGoleine-Bold"
-  full_name: "Dh Goleine Bold"
+  filename: "Goleine-Bold.ttf"
+  post_script_name: "Goleine-Bold"
+  full_name: "Goleine Bold"
 }
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "italic"
   weight: 700
-  filename: "DhGoleine-BoldItalic.ttf"
-  post_script_name: "DhGoleine-BoldItalic"
-  full_name: "Dh Goleine Bold Italic"
+  filename: "Goleine-BoldItalic.ttf"
+  post_script_name: "Goleine-BoldItalic"
+  full_name: "Goleine Bold Italic"
 }
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "normal"
   weight: 800
-  filename: "DhGoleine-ExtraBold.ttf"
-  post_script_name: "DhGoleine-ExtraBold"
-  full_name: "Dh Goleine ExtraBold"
+  filename: "Goleine-ExtraBold.ttf"
+  post_script_name: "Goleine-ExtraBold"
+  full_name: "Goleine ExtraBold"
 }
 fonts {
-  name: "Dh Goleine"
+  name: "Goleine"
   style: "italic"
   weight: 800
-  filename: "DhGoleine-ExtraBoldItalic.ttf"
-  post_script_name: "DhGoleine-ExtraBoldItalic"
-  full_name: "Dh Goleine ExtraBold Italic"
+  filename: "Goleine-ExtraBoldItalic.ttf"
+  post_script_name: "Goleine-ExtraBoldItalic"
+  full_name: "Goleine ExtraBold Italic"
 }
 subsets: "latin"
 subsets: "latin-ext"

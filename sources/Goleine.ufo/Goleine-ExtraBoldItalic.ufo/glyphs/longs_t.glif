@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="longs_t" format="2">
+  <advance width="502"/>
+  <unicode hex="FB05"/>
+  <anchor x="221.415" y="49" name="bottom"/>
+  <anchor x="432.311" y="853" name="top"/>
+  <outline>
+    <component base="t" xOffset="20"/>
+  </outline>
+</glyph>

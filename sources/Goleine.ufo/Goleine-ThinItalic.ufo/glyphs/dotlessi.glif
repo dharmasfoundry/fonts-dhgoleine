@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dotlessi" format="2">
+  <advance width="252"/>
+  <unicode hex="0131"/>
+  <anchor x="213.539" y="557.68" name="top"/>
+  <outline>
+    <contour>
+      <point x="210.213" y="509" type="line" smooth="yes"/>
+      <point x="223.182" y="570"/>
+      <point x="229.009" y="588"/>
+      <point x="218.009" y="588" type="curve" smooth="yes"/>
+      <point x="201.009" y="588"/>
+      <point x="180.67" y="577"/>
+      <point x="177.245" y="575" type="curve"/>
+      <point x="178.395" y="571" type="line"/>
+      <point x="184.032" y="574" type="line" smooth="yes"/>
+      <point x="219.924" y="593.099"/>
+      <point x="202.552" y="520"/>
+      <point x="199.363" y="505" type="curve" smooth="yes"/>
+      <point x="116.236" y="114" type="line" smooth="yes"/>
+      <point x="94.9764" y="14"/>
+      <point x="96.1496" y="-4"/>
+      <point x="124.15" y="-4" type="curve" smooth="yes"/>
+      <point x="153.15" y="-4"/>
+      <point x="197.102" y="24"/>
+      <point x="202.953" y="28" type="curve"/>
+      <point x="201.803" y="32" type="line"/>
+      <point x="192.528" y="26" type="line" smooth="yes"/>
+      <point x="177.402" y="16"/>
+      <point x="147.85" y="4"/>
+      <point x="130.85" y="4" type="curve" smooth="yes"/>
+      <point x="108.85" y="4"/>
+      <point x="107.953" y="28"/>
+      <point x="126.449" y="115" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

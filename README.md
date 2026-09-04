@@ -1,10 +1,10 @@
-# Dh Goleine
+# Goleine
 
 [![][Fontspector]](https://dharmasfoundry.github.io/fonts-dhgoleine/fontspector/fontspector-report.html)
 
 [Fontspector]: https://img.shields.io/endpoint?url=https%3A%2F%2Fdharmasfoundry.github.io%2Ffonts-dhgoleine%2Fbadges%2FFontspectorQA.json
 
-Dh Goleine is a contemporary serif typeface designed for versatility and elegance. Available in 8 weights — Thin to ExtraBold — each with a matching Italic, making it suitable for branding, editorial, and digital interfaces.
+Goleine is a contemporary serif typeface designed for versatility and elegance. Available in 8 weights — Thin to ExtraBold — each with a matching Italic, making it suitable for branding, editorial, and digital interfaces.
 
 ![Sample Image](documentation/image1.png)
 ![Sample Image](documentation/image2.png)

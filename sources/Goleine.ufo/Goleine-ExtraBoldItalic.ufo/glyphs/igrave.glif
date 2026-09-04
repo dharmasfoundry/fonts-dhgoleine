@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="igrave" format="2">
+  <advance width="529"/>
+  <unicode hex="00EC"/>
+  <anchor x="332.408" y="590" name="top"/>
+  <outline>
+    <component base="dotlessi"/>
+    <component base="grave" xOffset="59.7012" yOffset="-199"/>
+  </outline>
+</glyph>

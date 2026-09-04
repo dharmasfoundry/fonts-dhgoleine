@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dcroat" format="2">
+  <advance width="531"/>
+  <unicode hex="0111"/>
+  <anchor x="440.313" y="782.208" name="top"/>
+  <outline>
+    <component base="d"/>
+    <component base="macron" xScale="1" xOffset="196.914" yOffset="-1.04545"/>
+  </outline>
+</glyph>

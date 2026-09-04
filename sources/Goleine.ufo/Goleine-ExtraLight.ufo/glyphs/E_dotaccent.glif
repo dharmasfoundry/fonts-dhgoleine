@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Edotaccent" format="2">
+  <advance width="483"/>
+  <unicode hex="0116"/>
+  <outline>
+    <component base="E"/>
+    <component base="dotaccent" xScale="1" xyScale="-8.86124e-18" xOffset="168.754" yOffset="-155.889"/>
+  </outline>
+</glyph>

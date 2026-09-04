@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="cedillacomb" format="2">
+  <unicode hex="0327"/>
+  <anchor x="0.0384" y="49.8123" name="_bottom"/>
+  <outline>
+    <component base="cedilla" xyScale="-5.56355e-19" yScale="1" xOffset="-135.5" yOffset="26.1"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.604,0.6,1,1</string>
+  </dict>
+  </lib>
+</glyph>
